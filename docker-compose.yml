@@ -21,8 +21,8 @@ services:
       - PROXY=http://ipfs-node:5001;/ # for API & web UI
       - STREAM=8080;ipfs-node:8080    # for IPFS gateway
     ports:
-      - 5001:80
-      - 8080:8080
+      - 5001:80/tcp
+      - 8080:8080/tcp
     links:
       - vpn-sidecar:ipfs-node
     depends_on:
