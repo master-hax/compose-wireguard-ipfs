@@ -16,7 +16,7 @@ the IPFS gateway should be accessible at http://localhost:8080 e.g. http://local
 
 if you want to use this persistently, you should probably
 1. change the locations of the `ipfs-node-data-volume` & `downloads-volume`
-1. add port forwarding using the rules proposed [here](https://github.com/linuxserver/docker-wireguard/issues/58#issuecomment-723702782)
+1. add port forwarding to your `wg0.conf` using the rules proposed [here](https://github.com/linuxserver/docker-wireguard/issues/58#issuecomment-723702782)
 
 ## how it works
 
