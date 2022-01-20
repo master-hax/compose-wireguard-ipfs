@@ -8,8 +8,11 @@ a multi-container Docker application to run an [IPFS node](https://hub.docker.co
 1. put your `wg0.conf` file into `./openvpn`
 1. run `docker-compose up`
 
-if everything works correctly, go-ipfs should be running behind Wireguard & you should be able to access its web UI at http://localhost:5001/webui
-& its IPFS gateway at http://localhost:8080 e.g. http://localhost:8080/ipfs/QmVmtux8UCk8553R2qVa7CBYJbQ11hfyswqEJmTLYCugPx?.png
+if everything works correctly, go-ipfs should be running behind Wireguard!
+
+the IPFS web UI should be accessible at http://localhost:5001/webui
+
+the IPFS gateway should be accessible at http://localhost:8080 e.g. http://localhost:8080/ipfs/QmVmtux8UCk8553R2qVa7CBYJbQ11hfyswqEJmTLYCugPx?.png
 
 if you want to use this persistently, you should probably
 1. change the locations of the `ipfs-node-data-volume` & `downloads-volume`
