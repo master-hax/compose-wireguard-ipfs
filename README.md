@@ -1,6 +1,6 @@
 # compose-wireguard-ipfs
 
-a multi-container Docker application to run an [IPFS node](https://hub.docker.com/r/linuxserver/ipfs) behind Wireguard
+a multi-container Docker application to run an [IPFS node](https://hub.docker.com/r/linuxserver/ipfs) behind a Wireguard client
 
 ## how to set it up
 
@@ -8,7 +8,7 @@ a multi-container Docker application to run an [IPFS node](https://hub.docker.co
 1. put your `wg0.conf` file into `./openvpn`
 1. run `docker-compose up`
 
-if everything works correctly, go-ipfs should be running behind Wireguard!
+if everything works correctly, go-ipfs should be running behind your VPN!
 
 the IPFS web UI should be accessible at http://localhost:5001/webui
 
@@ -16,7 +16,7 @@ the IPFS gateway should be accessible at http://localhost:8080 e.g. http://local
 
 if you want to use this persistently, you should probably
 1. change the locations of the `ipfs-node-data-volume` & `downloads-volume`
-1. add port forwarding to your `wg0.conf` using the rules proposed [here](https://github.com/linuxserver/docker-wireguard/issues/58#issuecomment-723702782)
+1. forward port 4001 with your VPN provider (or pick a different port), then add port forwarding to your `wg0.conf` using the rules proposed [here](https://github.com/linuxserver/docker-wireguard/issues/58#issuecomment-723702782)
 
 ## how it works
 
