@@ -1,6 +1,6 @@
 # compose-wireguard-ipfs
 
-a multi-container Docker application to run an [IPFS node](https://hub.docker.com/r/linuxserver/ipfs) behind a Wireguard client
+a multi-container Docker application to run an [IPFS node](https://hub.docker.com/r/linuxserver/ipfs) behind a [Wireguard](https://hub.docker.com/r/linuxserver/wireguard) client
 
 ## how to set it up
 
@@ -20,6 +20,6 @@ if you want to use this persistently, you should probably
 
 ## how it works
 
-the `ipfs-node` service shares the network stack of the `vpn-sidecar` service (Wireguard), which is tunneled through your VPN provider. to maintain local connectivity to the `ipfs-node` container's web UI, we proxy to it to through the `web-proxy` service (Nginx) using [Docker container links](https://docs.docker.com/network/links/).
+the `ipfs-node` service shares the network stack of the `vpn-sidecar` service (Wireguard), which is tunneled through your VPN provider. to maintain local connectivity to the `ipfs-node` container's web UI & IPFS gateway, we proxy to it to through the `web-proxy` service (Nginx) using [Docker container links](https://docs.docker.com/network/links/).
 
 ## note: an [OpenVPN](https://github.com/master-hax/compose-openvpn-ipfs) version is also available
