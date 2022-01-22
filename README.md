@@ -5,7 +5,7 @@ a multi-container Docker application to run an [IPFS node](https://hub.docker.co
 ## how to set it up
 
 1. download [docker-compose.yml](/docker-compose.yml)
-1. put your `wg0.conf` file into `./openvpn`
+1. put your `wg0.conf` file into `./wireguard`
 1. run `docker-compose up`
 
 if everything works correctly, go-ipfs should be running behind your VPN!
