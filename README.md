@@ -10,6 +10,8 @@ a multi-container Docker application to run an [IPFS node](https://hub.docker.co
 
 if everything works correctly, go-ipfs should be running behind your VPN!
 
+## how to use it
+
 the IPFS web UI should be accessible at http://localhost:5001/webui
 
 the IPFS gateway should be accessible at http://localhost:8080 e.g. http://localhost:8080/ipfs/QmVmtux8UCk8553R2qVa7CBYJbQ11hfyswqEJmTLYCugPx?.png
