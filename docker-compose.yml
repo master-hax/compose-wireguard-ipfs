@@ -2,7 +2,7 @@ version: "3.7"
 services:
 
   ipfs-node:
-    image: linuxserver/ipfs
+    image: lscr.io/linuxserver/ipfs
     restart: unless-stopped
     network_mode: service:vpn-sidecar
     depends_on:
